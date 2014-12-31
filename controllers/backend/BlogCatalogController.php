@@ -11,6 +11,8 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use yii\web\UploadedFile;
+use yii\base\View;
+
 
 /**
  * BlogCatalogController implements the CRUD actions for BlogCatalog model.
@@ -35,6 +37,11 @@ class BlogCatalogController extends Controller
                     ]
                 ]
             ],
+        		
+        		'checksomething'=>
+        		[
+        				'class'=>\common\behaviors\MyBehavior::className(),
+        		]        		
         ];
     }
 
@@ -48,7 +55,7 @@ class BlogCatalogController extends Controller
 
         $searchModel = new BlogCatalogSearch();
         $dataProvider = BlogCatalog::get(0, BlogCatalog::find()->all());
-
+        
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,

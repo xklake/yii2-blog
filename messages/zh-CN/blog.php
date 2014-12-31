@@ -98,5 +98,7 @@ return [
     'Write comments' => '留下评论',
     'Add comments' => '发表评论',
     'Actions' => '操作',
+	'Subscribe Time' =>'订阅时间', 
+	'Has subscribed' => '已经订阅？'
 ];
 
