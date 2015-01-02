@@ -11,9 +11,9 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-     self defined init    <?= $form->field($model, 'subscribetime') ?>
+     <?= $form->field($model, 'subscribetime') ?>
         <?= $form->field($model, 'hasscubscribed') ?>
-    
+
         <div class="form-group">
             <?= Html::submitButton(Yii::t('blog', 'Submit'), ['class' => 'btn btn-primary']) ?>
         </div>
