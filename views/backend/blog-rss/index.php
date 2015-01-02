@@ -10,7 +10,7 @@ use funson86\blog\models\Status;
 /* @var $searchModel backend\modules\blog\models\BlogPostSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Module::t('blog', 'Blog RSS');
+$this->title = Module::t('blog', 'Blog Rss');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="blog-post-index">

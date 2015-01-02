@@ -99,6 +99,7 @@ return [
     'Add comments' => '发表评论',
     'Actions' => '操作',
 	'Subscribe Time' =>'订阅时间', 
-	'Has subscribed' => '已经订阅？'
+	'Has subscribed' => '已经订阅？', 
+	'Blog Rss' =>'博客订阅客户',
 ];
 

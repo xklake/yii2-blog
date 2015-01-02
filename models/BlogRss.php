@@ -47,6 +47,8 @@ class BlogRss extends \common\models\ActiveRecord
             'userid' => Module::t('blog', 'User'),
             'subscribetime' => Module::t('blog', 'Subscribe Time'),
             'hasscubscribed' => Module::t('blog', 'Has scubscribed'),
+            'created_at' => Module::t('blog', 'Created At'),
+            'updated_at' => Module::t('blog', 'Updated At'),
         ];
     }
 

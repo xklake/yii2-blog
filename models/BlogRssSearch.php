@@ -57,7 +57,10 @@ class BlogRssSearch extends \funson86\blog\models\BlogRss
     public function search($params)
     {
     	$query = Blogrss::find();
-    	
+    	//$query->where(['userid'=>[2, 3]])->all();
+
+    	//$query->where(['userid'=>[2, 3]]); 
+    	//$query->with('auth_assignment')->all(); 
     	//$query->orderBy(['sort_order' => SORT_ASC, 'create_time' => SORT_DESC]);
     	
     	$dataProvider = new ActiveDataProvider([
