@@ -8,7 +8,7 @@ use yii\helpers\Html;
 $this->title = Yii::t('blog', 'Update {modelClass}: ', [
     'modelClass' => 'Blog Rss',
 ]) . ' ' . $model->userid;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('blog', 'Blog Rsses'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('blog', 'Blog Rss'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->userid, 'url' => ['view', 'id' => $model->userid]];
 $this->params['breadcrumbs'][] = Yii::t('blog', 'Update');
 ?>

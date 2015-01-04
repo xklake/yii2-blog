@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model funson86\blog\models\BlogRss */
 
 $this->title = $model->userid;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('blog', 'Blog Rsses'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('blog', 'Blog Rss'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="blog-rss-view">
