@@ -6,6 +6,7 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use funson86\blog\Module;
+use backend\models\User;
 
 /**
  * This is the model class for table "{{%blog_rss}}".
@@ -59,8 +60,10 @@ class BlogRssSearch extends \funson86\blog\models\BlogRss
     {
 
     	$query = Blogrss::find();
+    	
+		//$this->hasOne(User::className(),  ['userid'=>'id']); 
 
-        $query2 = BlogPost::find()->joinWith('blog_catalog')->all();
+		//$ret = BlogRss::find()->joinWith('user')->all();
 
       /*  $ne = new BlogRss();
         $ne->user = 'haha';
@@ -74,7 +77,7 @@ class BlogRssSearch extends \funson86\blog\models\BlogRss
 //        $ret = $query2->join(1, ' blog_catalog c ', ' 1.catalog_id = c.id ')->all();
 
 
-        foreach($ret as $row)
+       /* foreach($ret as $row)
         {
             //var_dump($row);
             foreach($row as $col)
@@ -82,6 +85,7 @@ class BlogRssSearch extends \funson86\blog\models\BlogRss
                 echo $col;
             }
         }
+        */
 
 /*        $ret = $query2->average('id');
 

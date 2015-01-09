@@ -85,7 +85,7 @@ class DefaultController extends Controller
         }
 
         $pagination = new Pagination([
-            'defaultPageSize' => Yii::$app->params['blogPostPageCount'],
+            'defaultPageSize' => isset(Yii::$app->params['blogPostPageCount'])? Yii::$app->params['blogPostPageCount']:10 ,
             'totalCount' => $query->count(),
         ]);
 

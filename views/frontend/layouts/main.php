@@ -40,7 +40,7 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 <div class="container" id="page">
     <div id="header">
-        <div id="logo"><?= Html::a(Yii::$app->params['blogTitle'], Yii::$app->homeUrl) ?></div>
+        <div id="logo">This is logo</div>
         <div id='search'><?= Search::widget() ?></div>
         <div class="clear"></div>
     </div><!-- header -->
@@ -80,7 +80,7 @@ AppAsset::register($this);
 
             <?= Links::widget([
                 'title' => '<i class="icon-st"></i>友情链接',
-                'links' => Yii::$app->params['blogLinks'],
+                'links' => [],
             ]) ?>
 
             <?= SiteStat::widget([
@@ -92,7 +92,7 @@ AppAsset::register($this);
 </div>
 
 <div id="footer">
-    <?= Yii::$app->params['blogFooter'] ?>
+    
 </div><!-- footer -->
 
 <?php $this->endBody() ?>
