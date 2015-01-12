@@ -26,13 +26,13 @@ class SiteStat extends Widget
         $res = $query->select('sum(click) as click')
             ->from('blog_post')->one();
         $click = $res['click'];
-        $str .= '<div class="site-stat">点击数量：'.$click.'</div>';
+        $str .= '<div class="site-stat">Views：'.$click.'</div>';
 
         $postCount = $query->from('blog_post')->count();
-        $str .= '<div class="site-stat">文章数量：'.$postCount.'</div>';
+        $str .= '<div class="site-stat">Posts：'.$postCount.'</div>';
 
         $commentCount = $query->from('blog_comment')->count();
-        $str .= '<div class="site-stat">评论数量：'.$commentCount.'</div>';
+        $str .= '<div class="site-stat">Comments：'.$commentCount.'</div>';
 
         return $this->render('portal', [
             'title' => $this->title,

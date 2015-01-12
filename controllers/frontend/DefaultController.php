@@ -48,7 +48,7 @@ class DefaultController extends Controller
                 }
                 else
                 {
-                    $item['url'] = Yii::$app->getUrlManager()->createUrl(['/blog/default/catalog/','id'=>$catalog->id, 'surname'=>$catalog->surname]);
+                    $item['url'] = Yii::$app->getUrlManager()->createUrl(['/blog/default/catalog/','id'=>$catalog->id, 'catalog'=>$catalog->surname]);
                 }
 
                 if(!empty($item))

@@ -64,27 +64,27 @@ AppAsset::register($this);
         <div id="sidebar">
 
             <?= TagCloud::widget([
-                'title' => '<i class="icon-st"></i>标签云',
+                'title' => '<i class="icon-st"></i>Tags',
                 'maxTags' => 5,
             ]) ?>
 
             <?= \funson86\blog\widgets\RecentPosts::widget([
-                'title' => '<i class="icon-st"></i>最新博文',
+                'title' => '<i class="icon-st"></i>Latest Posts',
                 'maxPosts' => 5,
             ]) ?>
 
             <?= RecentComments::widget([
-                'title' => '<i class="icon-st"></i>最新评论',
+                'title' => '<i class="icon-st"></i>Latest Comments',
                 'maxComments' => 5,
             ]) ?>
 
             <?= Links::widget([
-                'title' => '<i class="icon-st"></i>友情链接',
+                'title' => '<i class="icon-st"></i>Friendly Links',
                 'links' => [],
             ]) ?>
 
             <?= SiteStat::widget([
-                'title' => '<i class="icon-st"></i>网站统计',
+                'title' => '<i class="icon-st"></i>Stastics',
             ]) ?>
         </div>
     </div>
